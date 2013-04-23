@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMigrationTracker", "NewM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMigrationTracker.Tests", "NewMigrationTracker.Tests\NewMigrationTracker.Tests.csproj", "{44C5B196-1B7D-4953-A962-A99E460E86D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMigrationTracker.Data", "NewMigrationTracker.Entities\NewMigrationTracker.Data.csproj", "{D1A6CC4A-1BA3-459D-9162-9E9A0D3DB596}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMigrationTracker.Data", "NewMigrationTracker.Data\NewMigrationTracker.Data.csproj", "{D1A6CC4A-1BA3-459D-9162-9E9A0D3DB596}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMigrationTracker.DataAccess", "NewMigrationTracker.DataAccess\NewMigrationTracker.DataAccess.csproj", "{AE706376-A9F3-4819-9853-0E727F1A63FA}"
 EndProject
