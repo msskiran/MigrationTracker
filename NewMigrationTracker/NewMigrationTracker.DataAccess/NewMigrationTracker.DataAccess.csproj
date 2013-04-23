@@ -130,7 +130,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NewMigrationTracker.Entities\NewMigrationTracker.Data.csproj">
+    <ProjectReference Include="..\NewMigrationTracker.Data\NewMigrationTracker.Data.csproj">
       <Project>{d1a6cc4a-1ba3-459d-9162-9e9a0d3db596}</Project>
       <Name>NewMigrationTracker.Data</Name>
     </ProjectReference>

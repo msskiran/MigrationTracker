@@ -283,7 +283,7 @@
       <Project>{b97eb174-6973-4039-9859-3029cef7a4ff}</Project>
       <Name>NewMigrationTracker.DataServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\NewMigrationTracker.Entities\NewMigrationTracker.Data.csproj">
+    <ProjectReference Include="..\NewMigrationTracker.Data\NewMigrationTracker.Data.csproj">
       <Project>{d1a6cc4a-1ba3-459d-9162-9e9a0d3db596}</Project>
       <Name>NewMigrationTracker.Data</Name>
     </ProjectReference>
