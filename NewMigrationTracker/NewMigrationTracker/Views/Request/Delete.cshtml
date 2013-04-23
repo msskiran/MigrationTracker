@@ -1,0 +1,53 @@
+﻿@model NewMigrationTracker.Entities.Request
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Request</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Status.StatusName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Status.StatusName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.User.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.User.UserName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreatedAt)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreatedAt)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UpdatedAt)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UpdatedAt)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Release.ReleaseName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Release.ReleaseName)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

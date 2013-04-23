@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE706376-A9F3-4819-9853-0E727F1A63FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewMigrationTracker.DataAccess</RootNamespace>
+    <AssemblyName>NewMigrationTracker.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201304201622028_InitialCreate.cs" />
+    <Compile Include="Migrations\201304201622028_InitialCreate.Designer.cs">
+      <DependentUpon>201304201622028_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304201715141_removeUserIdentityColumn.cs" />
+    <Compile Include="Migrations\201304201715141_removeUserIdentityColumn.Designer.cs">
+      <DependentUpon>201304201715141_removeUserIdentityColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304201731384_addUserRoles.cs" />
+    <Compile Include="Migrations\201304201731384_addUserRoles.Designer.cs">
+      <DependentUpon>201304201731384_addUserRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304201931059_addRelease.cs" />
+    <Compile Include="Migrations\201304201931059_addRelease.Designer.cs">
+      <DependentUpon>201304201931059_addRelease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304201933381_modifyAppln.cs" />
+    <Compile Include="Migrations\201304201933381_modifyAppln.Designer.cs">
+      <DependentUpon>201304201933381_modifyAppln.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304201946497_modifyProjectRelease.cs" />
+    <Compile Include="Migrations\201304201946497_modifyProjectRelease.Designer.cs">
+      <DependentUpon>201304201946497_modifyProjectRelease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304202002329_teamdata.cs" />
+    <Compile Include="Migrations\201304202002329_teamdata.Designer.cs">
+      <DependentUpon>201304202002329_teamdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304202021356_undoteamdata.cs" />
+    <Compile Include="Migrations\201304202021356_undoteamdata.Designer.cs">
+      <DependentUpon>201304202021356_undoteamdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304202031578_Release-project-info.cs" />
+    <Compile Include="Migrations\201304202031578_Release-project-info.Designer.cs">
+      <DependentUpon>201304202031578_Release-project-info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304202125238_addCommentsAndStatus.cs" />
+    <Compile Include="Migrations\201304202125238_addCommentsAndStatus.Designer.cs">
+      <DependentUpon>201304202125238_addCommentsAndStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304202152180_addRequestAndModifyRelease.cs" />
+    <Compile Include="Migrations\201304202152180_addRequestAndModifyRelease.Designer.cs">
+      <DependentUpon>201304202152180_addRequestAndModifyRelease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304202205218_modifyrelease.cs" />
+    <Compile Include="Migrations\201304202205218_modifyrelease.Designer.cs">
+      <DependentUpon>201304202205218_modifyrelease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304202212041_modifyrelease-1.cs" />
+    <Compile Include="Migrations\201304202212041_modifyrelease-1.Designer.cs">
+      <DependentUpon>201304202212041_modifyrelease-1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304202246025_AddRequestHistory.cs" />
+    <Compile Include="Migrations\201304202246025_AddRequestHistory.Designer.cs">
+      <DependentUpon>201304202246025_AddRequestHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304202247506_nameChange.cs" />
+    <Compile Include="Migrations\201304202247506_nameChange.Designer.cs">
+      <DependentUpon>201304202247506_nameChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304211442522_CommentUserID.cs" />
+    <Compile Include="Migrations\201304211442522_CommentUserID.Designer.cs">
+      <DependentUpon>201304211442522_CommentUserID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304211455115_AddUserIDAsInt.cs" />
+    <Compile Include="Migrations\201304211455115_AddUserIDAsInt.Designer.cs">
+      <DependentUpon>201304211455115_AddUserIDAsInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304211509133_CommentRequestRelation.cs" />
+    <Compile Include="Migrations\201304211509133_CommentRequestRelation.Designer.cs">
+      <DependentUpon>201304211509133_CommentRequestRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="NewMigrationTrackerContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NewMigrationTracker.Entities\NewMigrationTracker.Data.csproj">
+      <Project>{d1a6cc4a-1ba3-459d-9162-9e9a0d3db596}</Project>
+      <Name>NewMigrationTracker.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201304201622028_InitialCreate.resx">
+      <DependentUpon>201304201622028_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304201715141_removeUserIdentityColumn.resx">
+      <DependentUpon>201304201715141_removeUserIdentityColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304201731384_addUserRoles.resx">
+      <DependentUpon>201304201731384_addUserRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304201931059_addRelease.resx">
+      <DependentUpon>201304201931059_addRelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304201933381_modifyAppln.resx">
+      <DependentUpon>201304201933381_modifyAppln.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304201946497_modifyProjectRelease.resx">
+      <DependentUpon>201304201946497_modifyProjectRelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304202002329_teamdata.resx">
+      <DependentUpon>201304202002329_teamdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304202021356_undoteamdata.resx">
+      <DependentUpon>201304202021356_undoteamdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304202031578_Release-project-info.resx">
+      <DependentUpon>201304202031578_Release-project-info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304202125238_addCommentsAndStatus.resx">
+      <DependentUpon>201304202125238_addCommentsAndStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304202152180_addRequestAndModifyRelease.resx">
+      <DependentUpon>201304202152180_addRequestAndModifyRelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304202205218_modifyrelease.resx">
+      <DependentUpon>201304202205218_modifyrelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304202212041_modifyrelease-1.resx">
+      <DependentUpon>201304202212041_modifyrelease-1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304202246025_AddRequestHistory.resx">
+      <DependentUpon>201304202246025_AddRequestHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304202247506_nameChange.resx">
+      <DependentUpon>201304202247506_nameChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304211442522_CommentUserID.resx">
+      <DependentUpon>201304211442522_CommentUserID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304211455115_AddUserIDAsInt.resx">
+      <DependentUpon>201304211455115_AddUserIDAsInt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304211509133_CommentRequestRelation.resx">
+      <DependentUpon>201304211509133_CommentRequestRelation.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

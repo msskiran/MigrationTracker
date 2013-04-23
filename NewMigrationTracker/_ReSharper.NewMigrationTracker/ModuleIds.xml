@@ -1,0 +1,10 @@
+<Modules>
+  <Module PersistentId="D1A6CC4A-1BA3-459D-9162-9E9A0D3DB596" ModuleId="NewMigrationTracker.Data" />
+  <Module PersistentId="86A63356-48BD-4608-A14B-D050DBE91BC5" ModuleId="NewMigrationTracker" />
+  <Module PersistentId="AE706376-A9F3-4819-9853-0E727F1A63FA" ModuleId="NewMigrationTracker.DataAccess" />
+  <Module PersistentId="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="EntityFramework" />
+  <Module PersistentId="B97EB174-6973-4039-9859-3029CEF7A4FF" ModuleId="NewMigrationTracker,Services" />
+  <Module PersistentId="NewMigrationTracker.DataServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" ModuleId="NewMigrationTracker.DataServices" />
+  <Module PersistentId="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="System.Web.Mvc" />
+  <Module PersistentId="44C5B196-1B7D-4953-A962-A99E460E86D0" ModuleId="NewMigrationTracker.Tests" />
+</Modules>
